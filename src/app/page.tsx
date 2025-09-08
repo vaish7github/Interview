@@ -1,14 +1,17 @@
 import { Button } from "@/components/ui/button";
+import { SignedOut, SignInButton, SignUpButton, SignedIn, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home </h1>
-      <Button>
-        Sign In
-      </Button>
+    <div className="m-10">
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
     </div>
-     );
+  );
 
 }
