@@ -14,3 +14,5 @@ export default defineSchema({
     }).index("by_clerk_id", ["clerkId"]),
 });
 // now this table is pushed in the convex 
+// https://first-ferret-81.clerk.accounts.dev   this is the jwt
+
