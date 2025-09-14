@@ -4,7 +4,13 @@ import { SignedOut, SignInButton, SignedIn, UserButton } from "@clerk/nextjs";
 export default function Home() {
   return (
     <div className="m-10">
-      home page
+      <SignedOut>
+        <SignInButton />
+
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
     </div>
   );
 }
